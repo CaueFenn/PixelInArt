@@ -1,0 +1,194 @@
+body {
+  background-color: #1e1e1e;
+  background-image: linear-gradient(#333 1px, transparent 1px),
+                    linear-gradient(90deg, #333 1px, transparent 1px);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pixel-grid div:hover {
+  outline: 2px solid #999;
+}
+
+.pixel {
+  transition: outline 0.1s ease;
+}
+
+.pixel:hover {
+  outline: 1px solid #000;
+}
+
+button.btn,
+input[type="color"],
+input[type="number"],
+label.btn {
+  border-radius: 8px !important;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+button.btn:hover,
+label.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+input[type="color"] {
+  width: 48px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+
+
+
+.pixel-grid div:hover {
+  outline: 2px solid #999;
+}
+
+.pixel {
+  transition: outline 0.0s ease;
+} 
+
+.pixel:hover {
+  outline: 1px solid #000;
+}
+
+
+.pixel-grid div {
+  box-sizing: border-box;
+  border: 0.5px solid rgba(0, 0, 0, 0.05); /* borda leve e discreta */
+} 
+
+/* Estilo geral para todos os botões */
+button.btn {
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+button.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  background-color: #e0e0e0;
+}
+
+/* Botão de limpar */
+.btn-danger {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #e25252 !important;
+}
+
+/* Botão de download */
+.btn-success {
+  background-color: #38b000;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #2d9100 !important;
+}
+
+/* Botões de zoom */
+.btn-secondary {
+  background-color: #d1d1d1;
+  color: #000;
+}
+
+.btn-secondary:hover {
+  background-color: #bbb !important;
+}
+
+/* Borracha ativa */
+.btn-warning {
+  background-color: #f0ad4e !important; 
+  color: #fff;
+}
+
+.btn-outline-warning {
+  background-color: transparent;
+  border: 1px solid #f0ad4e;
+  color: #f0ad4e;
+}
+
+.btn-outline-warning:hover {
+  background-color: #f0ad4e !important;
+  color: white;
+}
+
+.btn-activated {
+  box-shadow: 0 0 8px 2px rgba(240, 173, 78, 0.9) !important; /* brilho laranja */
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-activated:hover {
+  box-shadow: 0 0 12px 4px rgba(240, 173, 78, 1) !important; /* brilho laranja mais intenso */
+}
+
+.btn-balde.btn-activated {
+  box-shadow: 0 0 8px 2px rgba(0, 123, 255, 0.9) !important; 
+  background-color: blue !important;/* azul */
+}
+
+.btn-balde.btn-activated:hover {
+  box-shadow: 0 0 12px 4px rgba(0, 123, 255, 1) !important;
+  background-color: blue !important;
+}
+
+
+
+.pixel-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.5rem;
+  color: #ff1900;
+  text-shadow: 2px 2px #000;
+  background: linear-gradient(90deg, #ff0000, #ff0000, #ff6600);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  animation: glow 2s ease-in-out infinite alternate;
+  padding: 12px 0;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 4px #ff0000, 0 0 8px #ff0000, 0 0 12px #ff6600;
+  }
+  to {
+    text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff6600;
+  }
+}
+
+body {
+  transform: scale(0.48);
+  transform-origin: top left;
+  width: 200%;
+  height: 100%;
+  /* overflow: hidden;  */
+}
